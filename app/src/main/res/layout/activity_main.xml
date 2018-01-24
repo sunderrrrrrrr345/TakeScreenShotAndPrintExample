@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rl"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.takescreenshotandprintexample.MainActivity">
+
+    <Button
+        android:id="@+id/capture_screen_shot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="screenShot"
+        android:text="Take ScreenShot" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintTop_toBottomOf="@+id/capture_screen_shot"
+        android:text="Hi hello" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:src="@mipmap/ic_launcher"
+     />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:id="@+id/web"
+        android:gravity="center|bottom"
+        android:text="ViralAndroid.com"
+        android:textSize="26sp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:textStyle="bold" />
+
+</android.support.constraint.ConstraintLayout>
